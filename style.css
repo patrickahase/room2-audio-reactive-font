@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face{
+  font-family: 'Phase';
+  src: url('./fonts/Phase-AGX.woff2') format("woff2");
+}
+@font-face{
+  font-family: 'Daffy';
+  src: url('./fonts/DaffyGX.woff2') format("woff2");
+}
+@font-face{
+  font-family: 'CSTM';
+  src: url('./fonts/CSTMXprmntl03-VF.woff2') format("woff2");
+}
+@font-face{
+  font-family: 'Minerale';
+  src: url('./fonts/Minerale-Variable.woff2') format("woff2");
+}
+@font-face{
+  font-family: 'strokeWeight';
+  src: url('./fonts/strokeWeight\(var\).woff2') format("woff2");
+}
+
+:root{
+    --colour-one: rgb(0,0,0);
+    --colour-two: rgb(100,100,100);
+    --colour-three: rgb(180,180,180);
+    --colour-four: rgb(240,240,240);
+    --border-one: dashed 2px white;
+    --font-var-one: 0;
+    --font-var-two: 0;
+    --font-var-three: 0;
+}
+
+#font-wrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#font-text{
+  font-size: 3rem;
+}
+#font-text.Phase{
+  font-family: 'Phase';
+  font-variation-settings: "phon" var(--font-var-one), "phtw" var(--font-var-two), "phth" var(--font-var-three);
+}
+#font-text.Daffy{
+  font-family: 'Daffy';
+  font-variation-settings: "daff" var(--font-var-one);
+}
+#font-text.CSTM{
+  font-family: 'CSTM';
+  font-variation-settings: "wght" var(--font-var-one);
+}
+#font-text.Minerale{
+  font-family: 'Minerale';
+  font-variation-settings: "wght" var(--font-var-one);
+}
+#font-text.strokeWeight{
+  font-family: 'strokeWeight';
+  font-variation-settings: "wght" var(--font-var-one), "slnt" var(--font-var-two);
+}
+
+#axis-sliders-wrapper{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}

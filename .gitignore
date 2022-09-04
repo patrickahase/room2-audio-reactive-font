@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# font files
+fonts/
+
+# sound
+sod.mp3

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+      <div id="font-wrapper">
+        <span id="font-text" class="Phase">Here's some text for the font</span>
+      </div>
+      <div id="axis-sliders-wrapper">
+        <span>axis one</span>
+        <input type="range" min="0" max="100" value="50" class="slider" oninput='changeRootVar("--font-var-one", this.value)'>
+        <span>axis two</span>
+        <input type="range" min="0" max="100" value="50" class="slider" oninput='changeRootVar("--font-var-two", this.value)'>
+        <span>axis three</span>
+        <input type="range" min="0" max="100" value="50" class="slider" oninput='changeRootVar("--font-var-three", this.value)'>
+        <fieldset>
+          <legend>Select a font:</legend>
+          <div>
+            <input type="radio" name="font" value="Phase" oninput="document.getElementById('font-text').className = this.value" checked>
+            <label for="huey">Phase</label>
+          </div>
+          <div>
+            <input type="radio" name="font" value="Daffy" oninput="document.getElementById('font-text').className = this.value">
+            <label for="huey">Daffy</label>
+          </div>
+          <div>
+            <input type="radio" name="font" value="CSTM" oninput="document.getElementById('font-text').className = this.value">
+            <label for="huey">CSTM</label>
+          </div>
+          <div>
+            <input type="radio" name="font" value="Minerale" oninput="document.getElementById('font-text').className = this.value">
+            <label for="huey">Minerale</label>
+          </div>
+          <div>
+            <input type="radio" name="font" value="strokeWeight" oninput="document.getElementById('font-text').className = this.value">
+            <label for="huey">strokeWeight</label>
+          </div>
+      </fieldset>
+      <audio src="./sod.mp3" id="audioSource" onplay="startAnalyser()" onpause="stopAnalyser()" controls >
+      </div>
+    </body>
+
+</html>
